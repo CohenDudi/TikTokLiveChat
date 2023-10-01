@@ -24,15 +24,19 @@ jobs:
           key: buildozer-global-${{ hashFiles('buildozer.spec') }} # Replace with your path
 
       - name: Install x1
+        path: .buildozer
         run: sudo apt-get update
 
       - name: Install x2
+        path: .buildozer
         run: sudo apt-get install build-essential
 
       - name: Install x3
+        path: .buildozer
         run: sudo apt-get install libstdc++6
 
       - name: Install x4
+        path: .buildozer
         run: sudo apt-get install aidl 
 
       - uses: actions/cache@v2
