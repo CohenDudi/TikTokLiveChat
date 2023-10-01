@@ -46,7 +46,7 @@ requirements = python3,pillow,asyncio,io,typing,PIL,TikTokLive,random,math,pygam
 # (str) Presplash of the application
 ball.filename = %(source.dir)s/data/ball.png
 bg.filename = %(source.dir)s/data/bg.png
-bgGame2.filename = %(source.dir)s/data/bgGame2.png
+bgGame2.filename = %(source.dir)s/data/bgGame2.jpg
 fistAttack.filename = %(source.dir)s/data/fistAttack.png
 point.filename = %(source.dir)s/data/point.png
 rules.filename = %(source.dir)s/data/rules.png

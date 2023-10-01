@@ -17,6 +17,18 @@ jobs:
           echo "::set-output name=date::$(/bin/date -u "+%Y%m%d")"
         shell: bash
 
+      - name: Install x1
+        run: sudo apt-get update
+
+      - name: Install x2
+        run: sudo apt-get install build-essential
+
+      - name: Install x3
+        run: sudo apt-get install libstdc++6
+
+      - name: Install x4
+        run: sudo apt-get install aidl 
+
       - name: Cache Buildozer global directory
         uses: actions/cache@v2
         with:
