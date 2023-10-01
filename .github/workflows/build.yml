@@ -24,24 +24,16 @@ jobs:
           key: buildozer-global-${{ hashFiles('buildozer.spec') }} # Replace with your path
 
       - name: Install x1
-        run: sudo apt-get update
-        with:
-          path: .buildozer_global
+        run: sudo apt-get update .buildozer_global
          
       - name: Install x2
-        run: sudo apt-get install build-essential
-        with:
-          path: .buildozer_global
+        run: sudo apt-get install build-essential .buildozer_global
 
       - name: Install x3
-        run: sudo apt-get install libstdc++6
-        with:
-          path: .buildozer_global
+        run: sudo apt-get install libstdc++6 .buildozer_global
 
       - name: Install x4
-        run: sudo apt-get install aidl 
-        with:
-          path: .buildozer_global
+        run: sudo apt-get install aidl .buildozer_global 
 
       - uses: actions/cache@v2
         with:
