@@ -24,16 +24,16 @@ jobs:
           key: buildozer-global-${{ hashFiles('buildozer.spec') }} # Replace with your path
 	
       - name: run1
-        run : :sudo /.buildozer_global apt-get update	
+        run : sudo /.buildozer_global apt-get update	
 
       - name: run2
-        run : :sudo /.buildozer_global apt-get install build-essential 
+        run : sudo /.buildozer_global apt-get install build-essential 
 
       - name: run3
-        run : :sudo /.buildozer_global install libstdc++6
+        run : sudo /.buildozer_global install libstdc++6
 
       - name: run4
-        run : :sudo /.buildozer_global apt-get install aidl 
+        run : sudo /.buildozer_global apt-get install aidl 
 
       - uses: actions/cache@v2
         with:
