@@ -32,10 +32,10 @@ jobs:
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
         with:
-          run: sudo apt-get update	
-          run: sudo apt-get install build-essential 
-          run: sudo apt-get install build-essential 
-          run: sudo apt-get install aidl 
+          command: sudo apt-get update	
+          command: sudo apt-get install build-essential 
+          command: sudo apt-get install build-essential 
+          command: sudo apt-get install aidl 
           command: buildozer android debug
           buildozer_version: master
 
