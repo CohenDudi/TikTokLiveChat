@@ -34,7 +34,7 @@ jobs:
         with:
           command: sudo apt-get update	
           command: sudo apt-get install build-essential 
-          command: sudo apt-get install build-essential 
+          command: sudo install libstdc++6
           command: sudo apt-get install aidl 
           command: buildozer android debug
           buildozer_version: master
